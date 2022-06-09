@@ -7,6 +7,15 @@ flux bootstrap github \
   --path=clusters/gitops \
   --personal
 
+git clone https://github.com/bradmccoydev/flux-demo
+cd flux-demo
+
+flux create source git keptn \
+  --url=https://github.com/bradmccoydev/flux-demo \
+  --branch=main \
+  --interval=90s \
+  --export > ./clusters/gitops/podinfo-source.yaml
+
 flux create source helm keptn --url https://charts.keptn.sh --namespace keptn
 
 flux create helmrelease keptn --chart keptn \
