@@ -12,6 +12,7 @@ spec:
     - kind: GitRepository
       name: "*"
     - kind: Kustomization
+      namespace: podtato-kustomize
       name: "*"
       matchLabels:
         app.kubernetes.io/name: podtato-head
