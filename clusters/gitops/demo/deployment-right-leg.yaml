@@ -33,9 +33,9 @@ spec:
           livenessProbe:
             tcpSocket:
               port: http
-          # readinessProbe:
-          #   tcpSocket:
-          #     port: http
+          readinessProbe:
+            tcpSocket:
+              port: http
           resources: {}
           env:
           - name: POD_NAME
