@@ -11,6 +11,12 @@ spec:
   eventSources:
     - kind: GitRepository
       name: "*"
+    - kind: HelmRelease
+      name: "*"
+    - kind: HelmChart
+      name: "*"
+    - kind: HelmRepository
+      name: "*"
     - kind: Kustomization
       namespace: podtato-kustomize
       name: "*"
