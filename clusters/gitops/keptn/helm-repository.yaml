@@ -1,9 +1,0 @@
-apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: HelmRepository
-metadata:
-  name: keptn
-  namespace: keptn
-spec:
-  interval: 5m0s
-  timeout: 120s
-  url: https://charts.keptn.sh
