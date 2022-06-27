@@ -4,7 +4,7 @@ metadata:
   name: keptn
   namespace: flux-system
 spec:
-  suspend: true
+  suspend: false
   chart:
     spec:
       chart: keptn
@@ -13,4 +13,4 @@ spec:
         kind: HelmRepository
         name: keptn-flux-integration
       version: 0.14.0
-  interval: 5m0s
+  interval: 50m0s
