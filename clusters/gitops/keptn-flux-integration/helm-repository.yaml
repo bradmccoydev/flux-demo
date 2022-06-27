@@ -6,4 +6,4 @@ metadata:
 spec:
   interval: 5m0s
   timeout: 120s
-  url: https://keptn-sandbox.github.io/keptn-flux-integration
+  url: https://charts.keptn.sh
