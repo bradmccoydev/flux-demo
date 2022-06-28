@@ -1,15 +1,15 @@
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: HelmRelease
-metadata:
-  name: keptn-ortelius-service
-  namespace: keptn
-spec:
-  chart:
-    spec:
-      chart: keptn
-      reconcileStrategy: ChartVersion
-      sourceRef:
-        kind: HelmRepository
-        name: keptn
-      version: 0.13.7
-  interval: 5m0s
+# apiVersion: helm.toolkit.fluxcd.io/v2beta1
+# kind: HelmRelease
+# metadata:
+#   name: keptn-ortelius-service
+#   namespace: keptn
+# spec:
+#   chart:
+#     spec:
+#       chart: keptn
+#       reconcileStrategy: ChartVersion
+#       sourceRef:
+#         kind: HelmRepository
+#         name: keptn
+#       version: 0.13.7
+#   interval: 5m0s

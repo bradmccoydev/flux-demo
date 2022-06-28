@@ -1,9 +1,9 @@
-apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: HelmRepository
-metadata:
-  name: keptn-flux-integration
-  namespace: flux-system
-spec:
-  interval: 5m0s
-  timeout: 120s
-  url: https://charts.keptn.sh
+# apiVersion: source.toolkit.fluxcd.io/v1beta2
+# kind: HelmRepository
+# metadata:
+#   name: keptn-ortelius-service
+#   namespace: keptn
+# spec:
+#   interval: 5m0s
+#   timeout: 120s
+#   url: https://ortelius.github.io/keptn-ortelius-service
