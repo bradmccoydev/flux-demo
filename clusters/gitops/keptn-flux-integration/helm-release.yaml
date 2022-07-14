@@ -16,15 +16,3 @@ spec:
   values:
     keptn:
       url: https://keptn.ortelius.io/api/v1/event
-    apps:
-    - name: podtato-head
-      namespace: podtato-kustomize
-      kind: Kustomization
-      labels:
-        keptnProject: flux-demo
-        keptnService: podtato-head
-        keptnStage: dev
-        keptnType: sh.keptn.event.test.delivery.triggered  
-      matchLabels:
-            app.kubernetes.io/name: podtato-head
-        integrationUrl: http://keptn-flux-integration.flux-system.svc.cluster.local:80
