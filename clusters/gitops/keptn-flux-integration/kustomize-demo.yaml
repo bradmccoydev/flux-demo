@@ -4,7 +4,7 @@ metadata:
   name: podtato-kustomize
   namespace: podtato-head-podtato-kustomize
 spec:
-  interval: 2m0s # detect drift and undo kubectl edits every hour
+  interval: 1m0s # detect drift and undo kubectl edits every hour
   wait: true # wait for all applied resources to become ready
   timeout: 3m0s # give up waiting after three minutes
   retryInterval: 2m0s # retry every two minutes on apply or waiting failures
